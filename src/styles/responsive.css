@@ -1,0 +1,161 @@
+@media screen and (max-width: 499px) {
+  .nav {
+    position: absolute;
+    z-index: 10;
+    width: 250px;
+    top: 70px;
+    left: 0;
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+    background-color: #557153;
+    -webkit-transform: translate(-300px, 0);
+  }
+
+  .open {
+    background: #557153;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+  }
+
+  .nav_item {
+    display: list-item;
+    width: 100%;
+    text-align: left;
+    padding: 1.5em;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .header_menu {
+    display: block;
+  }
+
+  .hero_title: {
+    font-size: 24px;
+  }
+
+  footer a {
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #nav {
+    font-size: none;
+  }
+
+  section {
+    margin-bottom: 80px;
+  }
+
+  .main-resto_label {
+    font-size: 26px;
+  }
+
+  .list-resto {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resto-item_name {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    background-image: var(--linear-gradiant),
+      url("../public/images/sharp/hero-image_4-small.jpg");
+  }
+}
+
+@media screen and (min-width: 648px) {
+  .hero_title {
+    font-size: 40px;
+  }
+
+  .hero_tagline {
+    font-size: 24px;
+  }
+
+  .resto-item_desc {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 1em;
+  }
+
+  main {
+    padding: 30px 80px;
+  }
+
+  .header {
+    padding: 20px 80px;
+  }
+
+  .hero_inner {
+    max-width: 85%;
+  }
+
+  .hero_title {
+    font-size: 40px;
+  }
+
+  .hero_tagline {
+    font-size: 22px;
+  }
+
+  section {
+    margin-bottom: 80px;
+  }
+
+  .list-resto {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+  }
+
+  .resto-item_name {
+    font-size: 22px;
+  }
+
+  .resto-item_desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-resto {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 24px;
+  }
+
+  main {
+    padding: 30px 100px;
+  }
+
+  .header {
+    padding: 20px 100px;
+  }
+
+  .hero {
+    height: 90vh;
+    min-width: 1000px;
+  }
+
+  .hero_inner {
+    max-width: 800px;
+  }
+
+  .hero_title {
+    font-size: 50px;
+  }
+
+  .hero_tagline {
+    margin-top: 22px;
+    font-size: 24px;
+  }
+}
